@@ -1,14 +1,12 @@
 
-//  Get all reminders (only user’s) 
-// Get reminders (all for user or by supplement)
-// Get all reminders (including supplement-linked) for the logged-in user
+// Get all reminders 
 exports.getAllReminders = async (req, res) => {
   try {
     const userId = req.user.id;
 
-    // Fetch reminders, both standalone and supplement-linked
+    // Fetch reminders
     const reminders = await Reminder.find({ user: userId })
-      .populate("supplement", "name dosage times"); // optional: fetch supplement info
+      .populate("supplement", "name dosage times"); 
 
     res.json(reminders);
   } catch (err) {

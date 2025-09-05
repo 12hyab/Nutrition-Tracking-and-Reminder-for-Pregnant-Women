@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Settings</title>
+  <link rel="stylesheet" href="../css/system-settings.css">
+</head>
+<body>
+  <div id="sidebar">
+    <h2>Hospital Admin</h2>
+    <ul>
+      <li><a href="adminDashbord.html">Dashboard</a></li>
+      <li><a href="nutrition-history.html">Nutrition History</a></li>
+      <li><a href="manage-users.html">Manage Users</a></li>
+      <li><a class="active" href="system-settings.html">System Settings</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="educational-content.html">Educational Content</a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+    <header>
+      <h1>System Settings</h1>
+    </header>
+
+    <form id="settingsForm">
+      <label>
+        Reminder Frequency (hours)
+        <input type="number" id="reminderFreq" min="1" placeholder="e.g. 6">
+      </label>
+
+      <label>
+        Default Supplements
+        <input type="text" id="defaultSupplements" placeholder="e.g. Iron, Folic Acid">
+      </label>
+
+      <label>
+        Alert Threshold (missed reminders)
+        <input type="number" id="alertThreshold" min="1" placeholder="e.g. 3">
+      </label>
+
+      <button type="submit">Save Settings</button>
+    </form>
+  </div>
+  <script src="../js/system-settings.js"></script>
+</body>
+</html>

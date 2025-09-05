@@ -2,7 +2,7 @@ const User = require("../models/User");
 const Reminder = require("../models/Reminder");
 const Supplement = require("../models/Supplement");
 
-// -------------------- Stats / Reports --------------------
+//  Stats / Reports 
 exports.getStats = async (req, res) => {
   try {
     const users = await User.countDocuments();
@@ -27,7 +27,7 @@ exports.getReports = async (req, res) => {
   }
 };
 
-// -------------------- Users --------------------
+//  Users 
 exports.getUsers = async (req, res) => {
   try {
     const users = await User.find().select("-password -__v");
@@ -57,7 +57,7 @@ exports.deleteUser = async (req, res) => {
   }
 };
 
-// -------------------- Reminders --------------------
+// Reminders 
 exports.getReminders = async (req, res) => {
   try {
     const reminders = await Reminder.find().populate("user", "fullName email");
@@ -91,7 +91,7 @@ exports.updateReminder = async (req, res) => {
   }
 };
 
-// -------------------- Supplements --------------------
+//Supplements
 exports.getSupplements = async (req, res) => {
   try {
     const supplements = await Supplement.find();

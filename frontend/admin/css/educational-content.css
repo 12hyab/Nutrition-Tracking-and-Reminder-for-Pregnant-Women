@@ -1,0 +1,148 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+#sidebar {
+  width: 220px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: silver;
+  color: black;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+#sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sidebar ul li {
+  margin: 15px 0;
+}
+
+#sidebar ul li a {
+  color: black;
+  font-weight: bold;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#sidebar ul li a:hover,
+#sidebar ul li a.active {
+  background-color: #ddd;
+}
+#main {
+  margin-left: 240px; 
+  padding: 20px;
+  min-height: 100vh;
+  transition: margin-left 0.3s;
+}
+
+#main header h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+form#uploadForm {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+form#uploadForm input[type="file"] {
+  display: block;
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form#uploadForm button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form#uploadForm button:hover {
+  background-color: #2980b9;
+}
+#contentList {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+#contentList li {
+  background-color: #fff;
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+#contentList li:hover {
+  transform: translateY(-2px);
+  background-color: #f9f9f9;
+}
+@media (max-width: 768px) {
+  #sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-shadow: none;
+  }
+
+  #main {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  form#uploadForm {
+    width: 100%;
+    padding: 15px;
+  }
+
+  form#uploadForm input,
+  form#uploadForm button {
+    width: 100%;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}

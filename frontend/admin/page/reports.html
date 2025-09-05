@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reports | Admin</title>
+  <link rel="stylesheet" href="../css/report.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="sidebar">
+    <h2>Hospital Admin</h2>
+    <ul>
+      <li><a href="adminDashbord.html">Dashboard</a></li>
+      <li><a href="nutrition-history.html">Nutrition History</a></li>
+      <li><a href="manage-users.html">Manage Users</a></li>
+      <li><a href="system-settings.html">System Settings</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="educational-content.html">Educational Content</a></li>
+    </ul>
+  </div>
+  <h1>Nutrition Reports</h1>
+
+<div class="filters">
+  <label>User:
+    <select id="userSelect">
+      <option value="">All Users</option>
+    </select>
+  </label>
+
+  <label>Trimester:
+    <select id="trimester">
+      <option value="">All</option>
+      <option value="1">First</option>
+      <option value="2">Second</option>
+      <option value="3">Third</option>
+    </select>
+  </label>
+
+  <label>Start Date:
+    <input type="date" id="startDate">
+  </label>
+
+  <label>End Date:
+    <input type="date" id="endDate">
+  </label>
+
+  <button id="applyFilters">Apply Filters</button>
+</div>
+
+<canvas id="calorieChart" width="400" height="200"></canvas>
+
+<div class="export-buttons">
+  <button id="downloadCsv">Download Filtered CSV</button>
+  <button id="downloadPdf">Download Filtered PDF</button>
+  <button id="exportAll">Export All Users</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="../js/reports.js"></script>
+
+</body>
+</html>

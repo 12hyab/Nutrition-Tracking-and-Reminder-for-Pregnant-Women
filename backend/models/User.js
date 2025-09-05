@@ -1,24 +1,26 @@
-
-const mongoose = require("mongoose");
-const bcrypt = require("bcryptjs");
-
+import mongoose from "mongoose";
+import bcrypt from "bcryptjs";
 const userSchema = new mongoose.Schema({
-  // Basic user info
   fullName: { type: String, required: true },
   email: { type: String, required: true, unique: true },
-  password: { type: String, required: true }, // will be hashed
+  password: { type: String, required: true },
+  role: { type: String, enum: ["user", "admin"], default: "user" },
+
+  // Optional fields for normal users only
   age: Number,
   phone: String,
   address: String,
-
-  // Pregnancy-related fields
-  birthStatus: { 
-    type: String, 
-    enum: ["first", "second", "third", "fourth_or_more"], 
-    required: true 
+  birthStatus: {
+    type: String,
+    enum: ["first", "second", "third", "fourth_or_more"],
+    required: function () { return this.role === "user"; }
   },
-  edd: Date,
-  trimester: { type: String, enum: ["1", "2", "3"] },
+  edd: { type: Date, required: function () { return this.role === "user"; } },
+  trimester: {
+    type: String,
+    enum: ["1", "2", "3"],
+    required: function () { return this.role === "user"; }
+  },
   preWeight: Number,
   currentWeight: Number,
   height: Number,
@@ -31,7 +33,6 @@ const userSchema = new mongoose.Schema({
   bloodType: String,
   reminderMethod: { type: String, enum: ["sms", "email"] },
 
-  // Nutrition tracking
   bmi: Number,
   conditions: [String],
   calorieLimit: Number,
@@ -51,26 +52,17 @@ const userSchema = new mongoose.Schema({
       totalFats: Number,
       totalSodium: Number
     }
-  ],
-
-  // Role-based access
-  role: { type: String, enum: ["user", "admin"], default: "user" }
+  ]
 
 }, { timestamps: true });
 
-//  Password Hashing 
-userSchema.pre("save", async function (next) {
+userSchema.pre("save", async function(next) {
   if (!this.isModified("password")) return next();
-  try {
-    this.password = await bcrypt.hash(this.password, 10);
-    next();
-  } catch (err) {
-    next(err);
-  }
+  this.password = await bcrypt.hash(this.password, 10);
+  next();
 });
-
 userSchema.methods.comparePassword = async function(candidatePassword) {
   return bcrypt.compare(candidatePassword, this.password);
 };
 
-module.exports = mongoose.model("User", userSchema);
+export default mongoose.model("User", userSchema);

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="../imgs/nu.png" alt="Healthy Pregnancy Logo">
+      <h1>Pregnancy Nutrition Tracker and Reminder</h1>
+    </div>
+    <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">&#9776;</div>
+    <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="trimester.html"><i class="fa-solid fa-calendar-days"></i> Trimester</a>
+      <a href="mealtracker.html">Meal tracker</a>
+      <a href="reminder.html"><i class="fa-solid fa-bell"></i> Reminders</a>
+      <a href="supplements.html">Supplements</a>
+      <a href="register.html">Register / Sign In</a>
+      <a href="profile.html" class="active">Profile</a>
+    </nav>
+  </header>
+  <main class="container">
+  <h1>Welcome, <span id="userName"></span>!</h1>
+  <div class="profile-grid">
+    <!-- Personal Info -->
+    <section class="profile-section">
+      <h2>👩 Personal Information</h2>
+      <p><strong>Full Name:</strong> <span id="fullName"></span></p>
+      <p><strong>Email / Username:</strong> <span id="email"></span></p>
+      <p><strong>Age:</strong> <span id="age"></span></p>
+      <p><strong>Phone Number:</strong> <span id="phone"></span></p>
+      <p><strong>Address:</strong> <span id="address"></span></p>
+    </section>
+    <!-- Pregnancy Info -->
+    <section class="profile-section">
+      <h2>🤰 Pregnancy Details</h2>
+      <p><strong>Birth Status:</strong> <span id="birthStatus"></span></p>
+      <p><strong>Expected Delivery Date:</strong> <span id="edd"></span></p>
+      <p><strong>Trimester:</strong> <span id="trimester"></span></p>
+      <p><strong>Pre-pregnancy Weight:</strong> <span id="preWeight"></span> kg</p>
+      <p><strong>Current Weight:</strong> <span id="currentWeight"></span> kg</p>
+      <p><strong>Height:</strong> <span id="height"></span> cm</p>
+    </section>
+    <!-- Nutrition Info -->
+    <section class="profile-section">
+      <h2>🥗 Nutrition</h2>
+      <p><strong>Allergies:</strong> <span id="allergies"></span></p>
+      <p><strong>Water Intake:</strong> <span id="waterIntake"></span> liters</p>
+      <p><strong>Activity Level:</strong> <span id="activityLevel"></span></p>
+    </section>
+    <!-- Medical Info -->
+    <section class="profile-section">
+      <h2>🩺 Medical Details</h2>
+      <p><strong>Chronic Conditions:</strong> <span id="chronicConditions"></span></p>
+      <p><strong>Past Pregnancy Issues:</strong> <span id="pastPregnancyIssues"></span></p>
+      <p><strong>Current Supplements:</strong> <span id="supplements"></span></p>
+      <p><strong>Blood Type:</strong> <span id="bloodType"></span></p>
+    </section>
+    <!-- Preferences -->
+    <section class="profile-section">
+      <h2>🔔 Preferences</h2>
+      <p><strong>Reminder Method:</strong> <span id="reminderMethod"></span></p>
+    </section>
+    <!-- User History -->
+    <section class="profile-section">
+      <h2>📜 Your History</h2>
+      <ul id="historyList" class="history-list">
+      </ul>
+    </section>
+
+  </div>
+  <div class="btn-container">
+    <a href="register.html" class="edit-btn">Edit Profile</a>
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+  </div>
+</main>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Pregnancy Nutrition Tracker and Reminder. All rights reserved.</p>
+      <p class="tagline">Helping moms stay healthy for their little ones ❤️</p>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <div class="contact-block">
+        <a href="contact.html">Contact Us</a>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/profile.js"></script>
+</body>
+</html>

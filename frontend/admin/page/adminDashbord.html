@@ -2,31 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="../css/adminPageStyle.css">
 </head>
 <body>
-  <nav class="sidebar">
-    <h2>Admin Panel</h2>
+  <div id="sidebar">
+    <h2>Hospital Admin</h2>
     <ul>
-      <li><a href="#" id="dashboardLink">Dashboard</a></li>
-      <li><a href="#" id="usersLink">Users</a></li>
-      <li><a href="#" id="remindersLink">Reminders</a></li>
-      <li><a href="#" id="reportsLink">Reports</a></li>
-      <li><button id="logoutBtn">Logout</button></li>
+      <li><a href="adminDashboard.html">Dashboard</a></li>
+      <li><a href="nutrition-history.html">Nutrition History</a></li>
+      <li><a href="manage-users.html">Manage Users</a></li>
+      <li><a href="system-settings.html">System Settings</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="educational-content.html">Educational Content</a></li>
     </ul>
-  </nav>
+  </div>
+  <div id="main">
+    <header>
+      <h1>Welcome, Admin</h1>
+      <button id="logoutBtn">Logout</button>
+    </header>
 
-  <main class="main-content">
-    <h1>Dashboard</h1>
-    <div class="cards">
-      <div class="card">Total Users: <span id="totalUsers">0</span></div>
-      <div class="card">Reminders Sent: <span id="totalReminders">0</span></div>
-      <div class="card">Completed: <span id="completedReminders">0</span></div>
-    </div>
-    <section id="dynamicContent"></section>
-  </main>
+    <section class="stats">
+      <div class="card">
+        <h3>Active Users</h3>
+        <p id="activeUsers">0</p>
+      </div>
+      <div class="card">
+        <h3>Nutrition Logs</h3>
+        <p id="nutritionLogs">0</p>
+      </div>
+      <div class="card">
+        <h3>Reports Generated</h3>
+        <p id="reportsCount">0</p>
+      </div>
+    </section>
+  </div>
 
+  <!-- External libraries first -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+  
+  <!-- Your script last -->
   <script src="../js/admin.js"></script>
 </body>
 </html>

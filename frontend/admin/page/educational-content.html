@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Content</title>
+  <link rel="stylesheet" href="../css/educational-content.css">
+</head>
+<body>
+  <div id="sidebar">
+    <h2>Hospital Admin</h2>
+    <ul>
+      <li><a href="adminDashbord.html">Dashboard</a></li>
+      <li><a href="nutrition-history.html">Nutrition History</a></li>
+      <li><a href="manage-users.html">Manage Users</a></li>
+      <li><a href="system-settings.html">System Settings</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="educational-content.html">Educational Content</a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+    <header>
+      <h1>Educational Content</h1>
+    </header>
+
+    <form id="uploadForm" enctype="multipart/form-data">
+      <input type="file" id="fileUpload" name="file">
+      <button type="submit">Upload</button>
+    </form>
+
+    <h2>Existing Content</h2>
+    <ul id="contentList"></ul>
+  </div>
+
+  <script src="../js/content.js"></script>
+</body>
+</html>

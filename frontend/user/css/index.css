@@ -1,0 +1,295 @@
+/* Homepage Specific Styles */
+    .hero {
+      background: linear-gradient(135deg, #f3edf2 0%, #e9b8e2 100%);
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .hero-content {
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .hero h2 {
+      font-size: 2.8rem;
+      color: #1d3557;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      color: #457b9d;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+    
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    .btn {
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+      font-size: 1.1rem;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .btn-primary {
+      background: #e7bce1;
+      color: #1d3557;
+      box-shadow: 0 4px 12px rgba(231, 188, 225, 0.4);
+    }
+    
+    .btn-primary:hover {
+      background: #da6330;
+      color: #f1faee;
+      transform: translateY(-3px);
+    }
+    
+    .btn-secondary {
+      background: #457b9d;
+      color: #f1faee;
+      box-shadow: 0 4px 12px rgba(69, 123, 157, 0.3);
+    }
+    
+    .btn-secondary:hover {
+      background: #1d3557;
+      transform: translateY(-3px);
+    }
+    
+    .features {
+      padding: 5rem 2rem;
+      background: #f9f7f6;
+    }
+    
+    .section-title {
+      text-align: center;
+      color: #1d3557;
+      font-size: 2.2rem;
+      margin-bottom: 3.5rem;
+      position: relative;
+    }
+    
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #e7bce1;
+      margin: 0.8rem auto 0;
+      border-radius: 2px;
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .feature-card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      text-align: center;
+      padding: 2.5rem 1.8rem;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .feature-icon {
+      font-size: 3.5rem;
+      color: #e7bce1;
+      margin-bottom: 1.5rem;
+    }
+    
+    .feature-card h3 {
+      color: #1d3557;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .feature-card p {
+      color: #457b9d;
+      line-height: 1.6;
+    }
+    
+    .trimester-guide {
+      padding: 5rem 2rem;
+      background: linear-gradient(to bottom, #e9b8e2 0%, #f3edf2 100%);
+      text-align: center;
+    }
+    
+    .trimester-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .trimester-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 16px;
+      padding: 2.5rem;
+      width: 100%;
+      max-width: 350px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+    
+    .trimester-card:hover {
+      transform: scale(1.03);
+    }
+    
+    .trimester-card h3 {
+      font-size: 1.8rem;
+      color: #1d3557;
+      margin-bottom: 1.5rem;
+    }
+    
+    .trimester-card ul {
+      text-align: left;
+      margin: 1.5rem 0;
+      padding-left: 1.5rem;
+    }
+    
+    .trimester-card li {
+      margin-bottom: 0.8rem;
+      color: #457b9d;
+      line-height: 1.5;
+    }
+    
+    .testimonials {
+      padding: 5rem 2rem;
+      background: #f9f7f6;
+    }
+    
+    .testimonial-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    
+    
+    
+    
+    .client-info {display: flex;
+      align-items: center;
+    }
+    
+    .client-info img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1rem;
+      border: 3px solid #e7bce1;
+    }
+    
+    .client-details h4 {
+      color: #1d3557;
+      margin-bottom: 0.3rem;
+    }
+    
+    .client-details p {
+      color: #da6330;
+      margin: 0;
+      font-style: normal;
+      font-weight: 500;
+    }
+    
+    .cta-section {
+      padding: 5rem 2rem;
+      background: linear-gradient(135deg, #f3edf2 0%, #e9b8e2 100%);
+      text-align: center;
+    }
+    
+    .cta-box {
+      background: #fff;
+      border-radius: 16px;
+      padding: 3.5rem 2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .cta-box h2 {
+      color: #1d3557;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .cta-box p {
+      color: #457b9d;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+    
+    /* Animation for hero elements */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+    
+    .hero-icon {
+      position: absolute;
+      font-size: 8rem;
+      opacity: 0.15;
+      color: #1d3557;
+      z-index: 1;
+      animation: float 6s ease-in-out infinite;
+    }
+    
+    .icon-1 { top: 20%; left: 10%; animation-delay: 0s; }
+    .icon-2 { top: 60%; right: 15%; animation-delay: 1s; }
+    .icon-3 { bottom: 20%; left: 20%; animation-delay: 2s; }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+      
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .btn {
+        width: 100%;
+        max-width: 300px;
+      }
+      
+      .trimester-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }

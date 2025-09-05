@@ -1,0 +1,3213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Pregnancy Nutrition Guide</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/trimester.css">
+  <link rel="stylesheet" href="../css/style.css">
+  </head>
+<body>
+<header class="site-header">
+  <div class="logo">
+    <img src="../imgs/nu.png" alt="Healthy Pregnancy Logo">
+    <h1>Pregnancy Nutrition Tracker and Reminder</h1>
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <nav class="nav-links" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="trimester.html"><i class="fa-solid fa-calendar-days"></i>Trimester</a>
+    <a href="mealtracker.html">Meal tracker</a>
+    <a href="reminder.html"><i class="fa-solid fa-bell"></i>Reminders</a>
+    <a href="supplements.html">Supplements</a>
+    <a href="register.html">Register / Sign In</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+</header>
+<main class="container">
+  <div class="page-title">
+    <h1>Monthly & Weekly Nutrition Guide</h1>
+    <p>Track your baby's development and nutritional needs throughout your pregnancy journey with our detailed month-by-month and week-by-week guide</p>
+  </div>
+  <div class="progress-container">
+    <h3 class="progress-title">Your Pregnancy Progress</h3>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+    <div class="progress-text">Week <span id="current-week">6</span> of 40 - Month <span id="current-month">2</span></div>
+  </div>
+
+  <div class="trimester-nav">
+    <button class="trimester-btn active" data-trimester="first">First Trimester</button>
+    <button class="trimester-btn" data-trimester="second">Second Trimester</button>
+    <button class="trimester-btn" data-trimester="third">Third Trimester</button>
+  </div>
+
+  <div class="month-nav" id="month-nav-first">
+    <button class="month-btn active" data-month="1">Month 1</button>
+    <button class="month-btn" data-month="2">Month 2</button>
+    <button class="month-btn" data-month="3">Month 3</button>
+  </div>
+
+  <div class="month-nav" id="month-nav-second" style="display:none;">
+    <button class="month-btn" data-month="4">Month 4</button>
+    <button class="month-btn" data-month="5">Month 5</button>
+    <button class="month-btn" data-month="6">Month 6</button>
+  </div>
+
+  <div class="month-nav" id="month-nav-third" style="display:none;">
+    <button class="month-btn" data-month="7">Month 7</button>
+    <button class="month-btn" data-month="8">Month 8</button>
+    <button class="month-btn" data-month="9">Month 9</button>
+  </div>
+
+  <div class="month-section active" id="month-1" data-month="1">
+    <div class="month-header">
+      <div class="month-icon">
+        <i class="fas fa-seedling"></i>
+      </div>
+      <div class="month-title-container">
+        <h2 class="month-title">Month 1: The Beginning</h2>
+        <div class="month-subtitle">Weeks 1-4: Conception to Embryonic Development</div>
+      </div>
+    </div>
+    
+    <div class="week-container">
+      <!-- Week 1 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 1: Preparation</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>Conception occurs. The fertilized egg travels to the uterus for implantation.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Folic Acid</span>
+                  <span class="nutrient-source">400-800 mcg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Vitamin B6</span>
+                  <span class="nutrient-source">1.9 mg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Leafy greens</li>
+                <li class="good">Fortified cereals</li>
+                <li class="good">Lentils</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Raw fish</li>
+                <li class="bad">Unpasteurized dairy</li>
+                <li class="bad">Excess caffeine</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-capsules"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Start Prenatals</h4>
+                  <p>Begin taking prenatal vitamins with folic acid immediately</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-ban"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Avoid Alcohol</h4>
+                  <p>Eliminate alcohol completely from your diet</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-water"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Hydration</h4>
+                  <p>Increase water intake to 8-10 glasses daily</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 2 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 2: Implantation</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The fertilized egg implants in the uterine lining. Cell division begins rapidly.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Folate</span>
+                  <span class="nutrient-source">400 mcg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Vitamin C</span>
+                  <span class="nutrient-source">85 mg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Oranges</li>
+                <li class="good">Bell peppers</li>
+                <li class="good">Broccoli</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Raw eggs</li>
+                <li class="bad">Soft cheeses</li>
+                <li class="bad">Processed meats</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-apple-alt"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Balanced Diet</h4>
+                  <p>Focus on whole foods, fruits, and vegetables</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-cookie"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Cravings</h4>
+                  <p>Listen to your body but make healthy choices</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-bed"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Rest</h4>
+                  <p>Get 7-9 hours of sleep each night</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 3 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 3: Early Development</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The embryo forms three layers that will develop into organs and systems.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Iron</span>
+                  <span class="nutrient-source">27 mg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Calcium</span>
+                  <span class="nutrient-source">1000 mg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Lean red meat</li>
+                <li class="good">Spinach</li>
+                <li class="good">Dairy products</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Swordfish</li>
+                <li class="bad">Shark</li>
+                <li class="bad">King mackerel</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-carrot"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Fiber Intake</h4>
+                  <p>Add fiber to prevent constipation</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-running"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Light Exercise</h4>
+                  <p>Continue with gentle exercise routines</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-stethoscope"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>First Appointment</h4>
+                  <p>Schedule your first prenatal visit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 4 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 4: Confirmation</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The neural tube begins forming, which will become the brain and spinal cord.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Folic Acid</span>
+                  <span class="nutrient-source">600 mcg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Vitamin B12</span>
+                  <span class="nutrient-source">2.6 mcg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Eggs</li>
+                <li class="good">Fortified plant milk</li>
+                <li class="good">Nutritional yeast</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">High-mercury fish</li>
+                <li class="bad">Undercooked meat</li>
+                <li class="bad">Unwashed produce</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-cookie-bite"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Morning Sickness</h4>
+                  <p>Eat small, frequent meals to manage nausea</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-prescription-bottle"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Medications</h4>
+                  <p>Review all medications with your doctor</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Stress Management</h4>
+                  <p>Practice relaxation techniques daily</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Month 2 Content -->
+  <div class="month-section" id="month-2" data-month="2">
+    <div class="month-header">
+      <div class="month-icon">
+        <i class="fas fa-heart"></i>
+      </div>
+      <div class="month-title-container">
+        <h2 class="month-title">Month 2: Heartbeat Begins</h2>
+        <div class="month-subtitle">Weeks 5-8: Major Organs Start Developing</div>
+      </div>
+    </div>
+    
+    <div class="week-container">
+      <!-- Week 5 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 5: Neural Development</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby's neural tube closes, and the heart begins to beat and pump blood.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Folic Acid</span>
+                  <span class="nutrient-source">600 mcg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Vitamin B6</span>
+                  <span class="nutrient-source">1.9 mg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Fortified cereals</li>
+                <li class="good">Legumes</li>
+                <li class="good">Avocado</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Raw sprouts</li>
+                <li class="bad">Deli meats</li>
+                <li class="bad">Unpasteurized juice</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-capsules"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Continue Prenatals</h4>
+                  <p>Keep taking prenatal vitamins daily</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-apple-alt"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Small Meals</h4>
+                  <p>Eat 5-6 small meals to combat nausea</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Listen to Body</h4>
+                  <p>Rest when you feel tired</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 6 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 6: Facial Features</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby's facial features begin to form, and limb buds appear.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Zinc</span>
+                  <span class="nutrient-source">11 mg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Vitamin D</span>
+                  <span class="nutrient-source">600 IU</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Nuts and seeds</li>
+                <li class="good">Fortified milk</li>
+                <li class="good">Egg yolks</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Raw shellfish</li>
+                <li class="bad">Excess sugar</li>
+                <li class="bad">Artificial sweeteners</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-gingerbread-man"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Ginger for Nausea</h4>
+                  <p>Try ginger tea or candies for morning sickness</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-weight"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Weight Gain</h4>
+                  <p>Expect minimal weight gain this early</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-tooth"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Dental Care</h4>
+                  <p>Schedule a dental checkup</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 7 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 7: Brain Growth</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby's brain is growing rapidly, and essential organs continue to develop.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Omega-3 Fatty Acids</span>
+                  <span class="nutrient-source">200-300 mg DHA</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Choline</span>
+                  <span class="nutrient-source">450 mg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Salmon</li>
+                <li class="good">Walnuts</li>
+                <li class="good">Eggs</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+      <ul class="food-list">
+        <li class="bad">High-sodium foods</li>
+        <li class="bad">Fried foods</li>
+        <li class="bad">Excess processed foods</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tips-section">
+    <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-icon">
+          <i class="fas fa-fish"></i>
+        </div>
+        <div class="tip-content">
+          <h4>Safe Fish</h4>
+          <p>Choose low-mercury fish like salmon and cod</p>
+        </div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">
+          <i class="fas fa-couch"></i>
+        </div>
+        <div class="tip-content">
+          <h4>Rest</h4>
+          <p>Don't fight fatigue - rest when needed</p>
+        </div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">
+          <i class="fas fa-hands"></i>
+        </div>
+        <div class="tip-content">
+          <h4>Hygiene</h4>
+          <p>Wash hands frequently to avoid infections</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Week 8 -->
+<div class="week-section">
+  <div class="week-header">
+    <div class="week-title">
+      <i class="fas fa-baby"></i>
+      <span>Week 8: Movement Begins</span>
+    </div>
+    <div class="week-toggle">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </div>
+  <div class="week-content">
+    <div class="content-grid">
+      <div class="baby-development">
+        <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+        <p>The baby begins to make spontaneous movements, though you can't feel them yet.</p>
+      </div>
+      <div class="nutrition-focus">
+        <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+        <ul class="nutrient-list">
+          <li>
+            <span class="nutrient-name">Protein</span>
+            <span class="nutrient-source">75-100 g</span>
+          </li>
+          <li>
+            <span class="nutrient-name">Vitamin E</span>
+            <span class="nutrient-source">15 mg</span>
+          </li>
+        </ul>
+      </div>
+      <div class="foods-to-eat">
+        <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+        <ul class="food-list">
+          <li class="good">Lean poultry</li>
+          <li class="good">Nuts and seeds</li>
+          <li class="good">Leafy greens</li>
+        </ul>
+      </div>
+      <div class="foods-to-avoid">
+        <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+        <ul class="food-list">
+          <li class="bad">Excess vitamin A</li>
+          <li class="bad">Herbal supplements</li>
+          <li class="bad">Unregulated health foods</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="tips-section">
+      <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <div class="tip-content">
+            <h4>Food Safety</h4>
+            <p>Ensure all meats are thoroughly cooked</p>
+          </div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">
+            <i class="fas fa-carrot"></i>
+          </div>
+          <div class="tip-content">
+            <h4>Vegetables</h4>
+            <p>Wash all fruits and vegetables thoroughly</p>
+          </div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <div class="tip-content">
+            <h4>Prenatal Visit</h4>
+            <p>Attend your first prenatal appointment</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Month 3 Content -->
+<div class="month-section" id="month-3" data-month="3">
+  <div class="month-header">
+    <div class="month-icon">
+      <i class="fas fa-hands"></i>
+    </div>
+    <div class="month-title-container">
+      <h2 class="month-title">Month 3: Forming Features</h2>
+      <div class="month-subtitle">Weeks 9-12: Fingers, Toes, and Facial Features Develop</div>
+    </div>
+  </div>
+  
+  <div class="week-container">
+    <!-- Week 9 -->
+    <div class="week-section">
+      <div class="week-header">
+        <div class="week-title">
+          <i class="fas fa-baby"></i>
+          <span>Week 9: Essential Development</span>
+        </div>
+        <div class="week-toggle">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+      <div class="week-content">
+        <div class="content-grid">
+          <div class="baby-development">
+            <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+            <p>The baby's essential body parts are present, and muscles begin to develop.</p>
+          </div>
+          <div class="nutrition-focus">
+            <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+            <ul class="nutrient-list">
+              <li>
+                <span class="nutrient-name">Calcium</span>
+                <span class="nutrient-source">1000 mg</span>
+              </li>
+              <li>
+                <span class="nutrient-name">Magnesium</span>
+                <span class="nutrient-source">350-400 mg</span>
+              </li>
+            </ul>
+          </div>
+          <div class="foods-to-eat">
+            <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+            <ul class="food-list">
+              <li class="good">Dairy products</li>
+              <li class="good">Dark leafy greens</li>
+              <li class="good">Nuts and seeds</li>
+            </ul>
+          </div>
+          <div class="foods-to-avoid">
+            <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+            <ul class="food-list">
+              <li class="bad">High-caffeine drinks</li>
+              <li class="bad">Unpasteurized cheeses</li>
+              <li class="bad">Raw dough</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="tips-section">
+          <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+          <div class="tips-grid">
+            <div class="tip-card">
+              <div class="tip-icon">
+                <i class="fas fa-apple-alt"></i>
+              </div>
+              <div class="tip-content">
+                <h4>Frequent Snacks</h4>
+                <p>Keep healthy snacks on hand for energy</p>
+              </div>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">
+                <i class="fas fa-tooth"></i>
+              </div>
+              <div class="tip-content">
+                <h4>Oral Health</h4>
+                <p>Pregnancy can affect gum health</p>
+              </div>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">
+                <i class="fas fa-tshirt"></i>
+              </div>
+              <div class="tip-content">
+                <h4>Comfortable Clothing</h4>
+                <p>Consider looser clothing as you may begin to show</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Week 10 -->
+    <div class="week-section">
+      <div class="week-header">
+        <div class="week-title">
+          <i class="fas fa-baby"></i>
+          <span>Week 10: Critical Period Ends</span>
+        </div>
+        <div class="week-toggle">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+      <div class="week-content">
+        <div class="content-grid">
+          <div class="baby-development">
+            <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+            <p>The critical development period ends. All vital organs have begun to form.</p>
+          </div>
+          <div class="nutrition-focus">
+            <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+            <ul class="nutrient-list">
+              <li>
+                <span class="nutrient-name">Vitamin A</span>
+                <span class="nutrient-source">770 mcg</span>
+              </li>
+              <li>
+                <span class="nutrient-name">Vitamin C</span>
+                <span class="nutrient-source">85 mg</span>
+              </li>
+            </ul>
+          </div>
+          <div class="foods-to-eat">
+            <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+            <ul class="food-list">
+              <li class="good">Sweet potatoes</li>
+              <li class="good">Carrots</li>
+              <li class="good">Citrus fruits</li>
+            </ul>
+          </div>
+          <div class="foods-to-avoid">
+            <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+            <ul class="food-list">
+              <li class="bad">Liver products</li>
+              <li class="bad">Excess vitamin A supplements</li>
+              <li class="bad">Raw seafood</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="tips-section">
+          <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+          <div class="tips-grid">
+            <div class="tip-card">
+              <div class="tip-icon">
+                <i class="fas fa-weight"></i>
+              </div>
+              <div class="tip-content">
+                <h4>Weight Check</h4>
+                <p>Monitor weight gain with your healthcare provider</p>
+              </div>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">
+                <i class="fas fa-apple-alt"></i>
+              </div>
+              <div class="tip-content">
+                <h4>Balanced Diet</h4>
+                <p>Focus on variety in your meals</p>
+              </div>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">
+                <i class="fas fa-restroom"></i>
+              </div>
+              <div class="tip-content">
+                <h4>Frequent Urination</h4>
+                <p>Stay hydrated but reduce fluids before bedtime</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Week 11 -->
+    <div class="week-section">
+      <div class="week-header">
+        <div class="week-title">
+          <i class="fas fa-baby"></i>
+          <span>Week 11: Growth Spurt</span>
+        </div>
+        <div class="week-toggle">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+      <div class="week-content">
+        <div class="content-grid">
+          <div class="baby-development">
+            <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+            <p>The baby almost doubles in size this week. Bones begin to harden.</p>
+          </div>
+          <div class="nutrition-focus">
+            <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+            <ul class="nutrient-list">
+              <li>
+                <span class="nutrient-name">Calcium</span>
+                <span class="nutrient-source">1000 mg</span>
+              </li>
+              <li>
+                <span class="nutrient-name">Vitamin D</span>
+                <span class="nutrient-source">600 IU</span>
+              </li>
+            </ul>
+          </div>
+          <div class="foods-to-eat">
+            <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+            <ul class="food-list">
+              <li class="good">Dairy products</li>
+              <li class="good">Fortified plant milks</li>
+              <li class="good">Fatty fish</li>
+            </ul>
+          </div>
+          <div class="foods-to-avoid">
+            <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+            <ul class="food-list">
+              <li class="bad">Unpasteurized dairy</li>
+              <li class="bad">High-mercury fish</li>
+              <li class="bad">Raw eggs</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="tips-section">
+          <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+          <div class="tips-grid">
+            <div class="tip-card">
+              <div class="tip-icon">
+                <i class="fas fa-teeth"></i>
+              </div>
+              <div class="tip-content">
+                <h4>Dental Health</h4>
+                <p>Continue good oral hygiene practices</p>
+              </div>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">
+                <i class="fas fa-walking"></i>
+              </div>
+              <div class="tip-content">
+                <h4>Exercise</h4>
+                <p>Maintain regular, moderate exercise</p>
+              </div>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">
+                <i class="fas fa-couch"></i>
+              </div>
+              <div class="tip-content">
+                <h4>Rest</h4>
+                <p>Listen to your body and rest when needed</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Week 12 -->
+    <div class="week-section">
+      <div class="week-header">
+        <div class="week-title">
+          <i class="fas fa-baby"></i>
+          <span>Week 12: Reflex Development</span>
+        </div>
+        <div class="week-toggle">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+      <div class="week-content">
+        <div class="content-grid">
+          <div class="baby-development">
+            <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+            <p>The baby develops reflexes. Fingers will soon begin to open and close.</p>
+          </div>
+          <div class="nutrition-focus">
+            <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+            <ul class="nutrient-list">
+              <li>
+                <span class="nutrient-name">Iodine</span>
+                <span class="nutrient-source">220 mcg</span>
+              </li>
+              <li>
+                <span class="nutrient-name">Iron</span>
+                <span class="nutrient-source">27 mg</span>
+              </li>
+            </ul>
+          </div>
+          <div class="foods-to-eat">
+            <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+            <ul class="food-list">
+              <li class="good">Iodized salt</li>
+              <li class="good">Seaweed</li>
+              <li class="good">Lean red meat</li>
+            </ul>
+          </div>
+          <div class="foods-to-avoid">
+            <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+            <ul class="food-list">
+              <li class="bad">Excess sodium</li>
+              <li class="bad">Processed meats</li>
+              <li class="bad">Raw shellfish</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="tips-section">
+          <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+          <div class="tips-grid">
+            <div class="tip-card">
+              <div class="tip-icon">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <div class="tip-content">
+                <h4>First Trimester Ending</h4>
+                <p>Congratulations on completing the first trimester!</p>
+              </div>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">
+                <i class="fas fa-utensils"></i>
+              </div>
+              <div class="tip-content">
+                <h4>Appetite Changes</h4>
+                <p>Your appetite may increase as nausea subsides</p>
+              </div>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <div class="tip-content">
+                <h4>Next Appointment</h4>
+                <p>Schedule your second trimester screening</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Month 4 Content -->
+  <div class="month-section" id="month-4" data-month="4">
+    <div class="month-header">
+      <div class="month-icon">
+        <i class="fas fa-child"></i>
+      </div>
+      <div class="month-title-container">
+        <h2 class="month-title">Month 4: Baby's Movements</h2>
+        <div class="month-subtitle">Weeks 13-16: Baby Starts Moving, Gender May Be Visible</div>
+      </div>
+    </div>
+    
+    <div class="week-container">
+      <!-- Week 13 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 13: Second Trimester Begins</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby's fingerprints have formed. The body is growing faster than the head.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Protein</span>
+                  <span class="nutrient-source">75-100 g</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Zinc</span>
+                  <span class="nutrient-source">11 mg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Lean meats</li>
+                <li class="good">Legumes</li>
+                <li class="good">Nuts and seeds</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">High-fat processed meats</li>
+                <li class="bad">Sugary snacks</li>
+                <li class="bad">Excess caffeine</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-tshirt"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Maternity Clothes</h4>
+                  <p>Consider investing in comfortable maternity wear</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-apple-alt"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Healthy Snacks</h4>
+                  <p>Keep nutritious snacks available for energy boosts</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Energy Returns</h4>
+                  <p>You may notice increased energy levels this week</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 14 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 14: Baby's Movement</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby is starting to make facial expressions and may be sucking its thumb. The neck is getting longer.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Calcium</span>
+                  <span class="nutrient-source">1000 mg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Vitamin D</span>
+                  <span class="nutrient-source">600 IU</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Dairy products</li>
+                <li class="good">Fortified plant milk</li>
+                <li class="good">Fatty fish</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Raw or undercooked eggs</li>
+                <li class="bad">Unpasteurized dairy</li>
+                <li class="bad">High-mercury fish</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-teeth"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Dental Checkup</h4>
+                  <p>Schedule a dental appointment as pregnancy can affect oral health</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-walking"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Regular Exercise</h4>
+                  <p>Continue with moderate exercise like walking or prenatal yoga</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-bed"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Sleep Position</h4>
+                  <p>Start sleeping on your side to improve circulation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 15 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 15: Sensory Development</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby's taste buds are forming, and it can sense light through closed eyelids. The legs are growing longer than the arms.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Omega-3 Fatty Acids</span>
+                  <span class="nutrient-source">200-300 mg DHA</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Vitamin A</span>
+                  <span class="nutrient-source">770 mcg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Salmon</li>
+                <li class="good">Chia seeds</li>
+                <li class="good">Sweet potatoes</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Excessive vitamin A from supplements</li>
+                <li class="bad">Raw sprouts</li>
+                <li class="bad">Unwashed fruits and vegetables</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-weight"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Weight Gain</h4>
+                  <p>Expect to gain about 1-2 pounds per week during this trimester</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Fetal Movement</h4>
+                  <p>You might start feeling fluttering movements soon</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-utensils"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Meal Planning</h4>
+                  <p>Focus on nutrient-dense foods to support baby's growth</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 16 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 16: Growth Spurt</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby is going through a growth spurt. The head is more erect, and the eyes and ears are close to their final positions.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Iron</span>
+                  <span class="nutrient-source">27 mg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Vitamin C</span>
+                  <span class="nutrient-source">85 mg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Lean red meat</li>
+                <li class="good">Citrus fruits</li>
+                <li class="good">Bell peppers</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Tea and coffee with meals (hinders iron absorption)</li>
+                <li class="bad">Processed foods with additives</li>
+                <li class="bad">High-sugar beverages</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-stethoscope"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Anatomy Scan</h4>
+                  <p>You may have an ultrasound to check baby's development around this time</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-apple-alt"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Fiber Intake</h4>
+                  <p>Increase fiber to prevent constipation common in pregnancy</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-hands"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Skin Changes</h4>
+                  <p>Moisturize your growing belly to help with stretching skin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Month 5 Content -->
+  <div class="month-section" id="month-5" data-month="5">
+    <div class="month-header">
+      <div class="month-icon">
+        <i class="fas fa-utensils"></i>
+      </div>
+      <div class="month-title-container">
+        <h2 class="month-title">Month 5: Growth Spurt</h2>
+        <div class="month-subtitle">Weeks 17-20: Baby's Senses Develop, Increased Appetite</div>
+      </div>
+    </div>
+    
+    <div class="week-container">
+      <!-- Week 17 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 17: Fat Accumulation</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby is starting to develop fat stores under the skin. This fat will help with temperature regulation and energy.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Healthy Fats</span>
+                  <span class="nutrient-source">Essential for brain development</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Calcium</span>
+                  <span class="nutrient-source">1000 mg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Avocado</li>
+                <li class="good">Nuts and seeds</li>
+                <li class="good">Dairy products</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Trans fats</li>
+                <li class="bad">Highly processed snacks</li>
+                <li class="bad">Sugary desserts</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Fetal Movement</h4>
+                  <p>You may start feeling gentle flutters as baby moves</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-utensils"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Small Meals</h4>
+                  <p>Eat smaller, more frequent meals to accommodate your growing uterus</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-bed"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Sleep Support</h4>
+                  <p>Use pillows to support your belly while sleeping</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 18 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 18: Hearing Development</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby's ears are now in their final position and hearing is developing. The bones are continuing to harden.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Magnesium</span>
+                  <span class="nutrient-source">350-400 mg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Vitamin D</span>
+                  <span class="nutrient-source">600 IU</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Leafy greens</li>
+                <li class="good">Nuts and seeds</li>
+                <li class="good">Fortified cereals</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Excess sodium</li>
+                <li class="bad">Processed meats</li>
+                <li class="bad">Foods with artificial sweeteners</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-music"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Talk to Baby</h4>
+                  <p>Your baby can now hear your voice - talk, sing, or read to them</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-running"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Stay Active</h4>
+                  <p>Continue with safe exercises like walking or swimming</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-hands"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Belly Support</h4>
+                  <p>Consider a maternity support belt if you're on your feet often</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 19 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 19: Sensory Development</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby's senses are developing rapidly. A protective coating called vernix caseosa covers the skin.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Omega-3 Fatty Acids</span>
+                  <span class="nutrient-source">200-300 mg DHA</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Choline</span>
+                  <span class="nutrient-source">450 mg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Fatty fish</li>
+                <li class="good">Eggs</li>
+                <li class="good">Lean meats</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">High-mercury fish</li>
+                <li class="bad">Raw or undercooked seafood</li>
+                <li class="bad">Unpasteurized products</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Brain Development</h4>
+                  <p>Focus on DHA-rich foods to support baby's brain growth</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-weight"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Weight Gain</h4>
+                  <p>Monitor your weight gain with your healthcare provider</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-hands-helping"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Support System</h4>
+                  <p>Build a support network for your pregnancy journey</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 20 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 20: Halfway Point</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>You're halfway through your pregnancy! The baby is swallowing more and producing meconium.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Fiber</span>
+                  <span class="nutrient-source">28 g</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Fluids</span>
+                  <span class="nutrient-source">10+ cups daily</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Whole grains</li>
+                <li class="good">Fruits and vegetables</li>
+                <li class="good">Legumes</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Foods that cause constipation</li>
+                <li class="bad">Dehydrating beverages</li>
+                <li class="bad">High-sodium processed foods</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Celebrate Milestone</h4>
+                  <p>Take time to celebrate reaching the halfway point</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-water"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Hydration</h4>
+                  <p>Increase water intake to support increased blood volume</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Plan Ahead</h4>
+                  <p>Start thinking about childbirth classes and baby preparations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Month 6 Content -->
+  <div class="month-section" id="month-6" data-month="6">
+    <div class="month-header">
+      <div class="month-icon">
+        <i class="fas fa-brain"></i>
+      </div>
+      <div class="month-title-container">
+        <h2 class="month-title">Month 6: Brain Development</h2>
+        <div class="month-subtitle">Weeks 21-24: Rapid Brain Growth, Baby Can Hear</div>
+      </div>
+    </div>
+    
+    <div class="week-container">
+      <!-- Week 21 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 21: Taste Buds Develop</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby's taste buds are working, and they can taste the amniotic fluid. Bone marrow is now making blood cells.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Calcium</span>
+                  <span class="nutrient-source">1000 mg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Vitamin K</span>
+                  <span class="nutrient-source">90 mcg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Dairy products</li>
+                <li class="good">Leafy greens</li>
+                <li class="good">Fortified foods</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Excess vitamin A supplements</li>
+                <li class="bad">Alcohol</li>
+                <li class="bad">Raw sprouts</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-apple-alt"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Varied Diet</h4>
+                  <p>Eat a variety of foods to expose baby to different flavors</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Movement Tracking</h4>
+                  <p>Start paying attention to baby's movement patterns</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-hands"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Skin Care</h4>
+                  <p>Moisturize your belly to help with itching from stretching skin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 22 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 22: Sense of Touch</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby's sense of touch is developing. They may explore their face and body with their hands.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Protein</span>
+                  <span class="nutrient-source">75-100 g</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Zinc</span>
+                  <span class="nutrient-source">11 mg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Lean meats</li>
+                <li class="good">Legumes</li>
+                <li class="good">Nuts and seeds</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Undercooked meats</li>
+                <li class="bad">Processed meats with nitrates</li>
+                <li class="bad">Raw shellfish</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-hands"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Bonding Time</h4>
+                  <p>Gently massage your belly and talk to your baby</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-shoe-prints"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Comfortable Shoes</h4>
+                  <p>Wear supportive shoes as your center of gravity shifts</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-file-medical"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Glucose Test</h4>
+                  <p>You may have a glucose screening test around this time</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 23 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 23: Hearing Develops</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby can hear loud noises from outside the womb. The lungs are developing surfactant.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Vitamin C</span>
+                  <span class="nutrient-source">85 mg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Protein</span>
+                  <span class="nutrient-source">75-100 g</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Citrus fruits</li>
+                <li class="good">Bell peppers</li>
+                <li class="good">Lean proteins</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Excessively spicy foods</li>
+                <li class="bad">Foods that cause heartburn</li>
+                <li class="bad">Carbonated beverages</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-music"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Play Music</h4>
+                  <p>Play different types of music to stimulate baby's hearing</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-utensils"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Small Meals</h4>
+                  <p>Eat smaller meals to avoid heartburn and indigestion</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-bed"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Sleep Position</h4>
+                  <p>Sleep on your side to improve circulation to baby</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 24 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 24: Viability Milestone</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby has reached viability, meaning they could potentially survive outside the womb with medical care.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Iron</span>
+                  <span class="nutrient-source">27 mg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Vitamin B12</span>
+                  <span class="nutrient-source">2.6 mcg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Lean red meat</li>
+                <li class="good">Fortified cereals</li>
+                <li class="good">Eggs</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Tea and coffee with meals</li>
+                <li class="bad">Calcium-rich foods with iron-rich foods</li>
+                <li class="bad">Foods that inhibit iron absorption</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Celebrate Milestone</h4>
+                  <p>Take a moment to celebrate reaching this important milestone</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-file-medical"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Regular Checkups</h4>
+                  <p>Continue with regular prenatal appointments</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-hands-helping"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Support System</h4>
+                  <p>Build your support network for the third trimester</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Month 7 Content -->
+  <div class="month-section" id="month-7" data-month="7">
+    <div class="month-header">
+      <div class="month-icon">
+        <i class="fas fa-lungs"></i>
+      </div>
+      <div class="month-title-container">
+        <h2 class="month-title">Month 7: Lung Development</h2>
+        <div class="month-subtitle">Weeks 25-28: Baby Practices Breathing, Eyes Open</div>
+      </div>
+    </div>
+    
+    <div class="week-container">
+      <!-- Week 25 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 25: Hand Coordination</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby is developing hand coordination and can make a fist. The structures of the spine are beginning to form.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Calcium</span>
+                  <span class="nutrient-source">1000 mg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Magnesium</span>
+                  <span class="nutrient-source">350-400 mg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Dairy products</li>
+                <li class="good">Nuts and seeds</li>
+                <li class="good">Leafy greens</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Foods high in oxalates (spinach, rhubarb)</li>
+                <li class="bad">Excess caffeine</li>
+                <li class="bad">High-sodium processed foods</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-hands"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Baby Movements</h4>
+                  <p>Pay attention to baby's movement patterns and report any changes</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-weight"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Weight Gain</h4>
+                  <p>You may be gaining about 1 pound per week now</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-bed"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Rest</h4>
+                  <p>Take time to rest as your body works hard growing baby</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 26 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 26: Eye Development</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby's eyes are forming, and they will soon open. The eyelashes are growing.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Vitamin A</span>
+                  <span class="nutrient-source">770 mcg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Omega-3 Fatty Acids</span>
+                  <span class="nutrient-source">200-300 mg DHA</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Sweet potatoes</li>
+                <li class="good">Carrots</li>
+                <li class="good">Fatty fish</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Liver products (high in vitamin A)</li>
+                <li class="bad">High-mercury fish</li>
+                <li class="bad">Raw or undercooked seafood</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Light Response</h4>
+                  <p>Baby may respond to light - try shining a flashlight on your belly</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-file-medical"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Glucose Test</h4>
+                  <p>You may have your glucose screening test for gestational diabetes</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Kick Counts</h4>
+                  <p>Start doing daily kick counts to monitor baby's movement</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 27 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 27: Brain Activity</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby's brain is very active now. The lungs are still developing but could function with medical help if born early.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Choline</span>
+                  <span class="nutrient-source">450 mg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Omega-3 Fatty Acids</span>
+                  <span class="nutrient-source">200-300 mg DHA</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Eggs</li>
+                <li class="good">Lean meats</li>
+                <li class="good">Fatty fish</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Foods high in saturated fats</li>
+                <li class="bad">Processed snacks</li>
+                <li class="bad">Sugary desserts</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Brain Development</h4>
+                  <p>Focus on DHA-rich foods to support baby's brain growth</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-bed"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Sleep Comfort</h4>
+                  <p>Use pillows to support your belly and back while sleeping</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-hands-helping"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Prepare Nursery</h4>
+                  <p>Start planning and preparing the baby's nursery</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 28 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 28: Third Trimester Begins</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>Welcome to the third trimester! The baby can blink their eyes and has eyelashes. The brain is developing billions of neurons.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Iron</span>
+                  <span class="nutrient-source">27 mg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Vitamin C</span>
+                  <span class="nutrient-source">85 mg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Lean red meat</li>
+                <li class="good">Citrus fruits</li>
+                <li class="good">Bell peppers</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Tea and coffee with meals</li>
+                <li class="bad">Calcium-rich foods with iron-rich foods</li>
+                <li class="bad">Foods that inhibit iron absorption</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Third Trimester</h4>
+                  <p>You've entered the final stretch of your pregnancy!</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-file-medical"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Appointment Frequency</h4>
+                  <p>You'll now have prenatal appointments every 2 weeks</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-baby"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Baby's Position</h4>
+                  <p>Your provider may start checking baby's position</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Month 8 Content -->
+  <div class="month-section" id="month-8" data-month="8">
+    <div class="month-header">
+      <div class="month-icon">
+        <i class="fas fa-weight"></i>
+      </div>
+      <div class="month-title-container">
+        <h2 class="month-title">Month 8: Weight Gain</h2>
+        <div class="month-subtitle">Weeks 29-32: Baby Gains Fat, Movements More Noticeable</div>
+      </div>
+    </div>
+    
+    <div class="week-container">
+      <!-- Week 29 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 29: Muscle Development</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby's muscles and lungs are continuing to mature. The head is growing to make room for the developing brain.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Protein</span>
+                  <span class="nutrient-source">75-100 g</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Calcium</span>
+                  <span class="nutrient-source">1000 mg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Lean meats</li>
+                <li class="good">Dairy products</li>
+                <li class="good">Legumes</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">High-fat processed meats</li>
+                <li class="bad">Sugary snacks</li>
+                <li class="bad">Excess caffeine</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Kick Counts</h4>
+                  <p>Continue monitoring baby's movements daily</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-utensils"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Small Meals</h4>
+                  <p>Eat smaller, more frequent meals to avoid heartburn</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-bed"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Rest</h4>
+                  <p>Take time to rest as your body works hard growing baby</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 30 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 30: Eye Development</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby can now distinguish between light and dark. The eyes open and close, and they may follow light sources.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Vitamin A</span>
+                  <span class="nutrient-source">770 mcg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Omega-3 Fatty Acids</span>
+                  <span class="nutrient-source">200-300 mg DHA</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Sweet potatoes</li>
+                <li class="good">Carrots</li>
+                <li class="good">Fatty fish</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Liver products (high in vitamin A)</li>
+                <li class="bad">High-mercury fish</li>
+                <li class="bad">Raw or undercooked seafood</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Light Response</h4>
+                  <p>Baby may respond to light - try shining a flashlight on your belly</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-hands"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Belly Support</h4>
+                  <p>Use a maternity support belt if you're experiencing back pain</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-file-medical"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>TDAP Vaccine</h4>
+                  <p>You may be offered the TDAP vaccine to protect baby from whooping cough</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 31 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 31: Rapid Weight Gain</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby is going through a period of rapid weight gain. They're also developing the ability to process information from all five senses.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Healthy Fats</span>
+                  <span class="nutrient-source">Essential for brain development</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Protein</span>
+                  <span class="nutrient-source">75-100 g</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Avocado</li>
+                <li class="good">Nuts and seeds</li>
+                <li class="good">Lean proteins</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Trans fats</li>
+                <li class="bad">Highly processed snacks</li>
+                <li class="bad">Sugary desserts</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-weight"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Weight Gain</h4>
+                  <p>You may be gaining about 1 pound per week now</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-utensils"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Small Meals</h4>
+                  <p>Eat smaller, more frequent meals to accommodate your growing uterus</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-bed"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Sleep Position</h4>
+                  <p>Sleep on your side to improve circulation to baby</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 32 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 32: Practice Breathing</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby is practicing breathing movements. The skin is becoming less wrinkled as fat deposits fill them out.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Iron</span>
+                  <span class="nutrient-source">27 mg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Vitamin C</span>
+                  <span class="nutrient-source">85 mg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Lean red meat</li>
+                <li class="good">Citrus fruits</li>
+                <li class="good">Bell peppers</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Tea and coffee with meals</li>
+                <li class="bad">Calcium-rich foods with iron-rich foods</li>
+                <li class="bad">Foods that inhibit iron absorption</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Braxton Hicks</h4>
+                  <p>You may experience practice contractions - stay hydrated</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-file-medical"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Appointment Frequency</h4>
+                  <p>You'll now have prenatal appointments every 2 weeks</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-baby"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Baby's Position</h4>
+                  <p>Your provider may start checking baby's position more frequently</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Month 9 Content -->
+  <div class="month-section" id="month-9" data-month="9">
+    <div class="month-header">
+      <div class="month-icon">
+        <i class="fas fa-baby-carriage"></i>
+      </div>
+      <div class="month-title-container">
+        <h2 class="month-title">Month 9: Final Preparations</h2>
+        <div class="month-subtitle">Weeks 33-40: Baby Drops, Organs Mature, Labor Approaches</div>
+      </div>
+    </div>
+    
+    <div class="week-container">
+      <!-- Week 33 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 33: Immune System</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby's immune system is developing, receiving antibodies from you. The bones are hardening except for the skull.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Vitamin C</span>
+                  <span class="nutrient-source">85 mg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Zinc</span>
+                  <span class="nutrient-source">11 mg</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Citrus fruits</li>
+                <li class="good">Bell peppers</li>
+                <li class="good">Nuts and seeds</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Excessively spicy foods</li>
+                <li class="bad">Foods that cause heartburn</li>
+                <li class="bad">Carbonated beverages</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Kick Counts</h4>
+                  <p>Continue monitoring baby's movements daily</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-utensils"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Small Meals</h4>
+                  <p>Eat smaller, more frequent meals to avoid heartburn</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-bed"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Rest</h4>
+                  <p>Take time to rest as your body prepares for labor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 34 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 34: Lung Maturation</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby's lungs are nearly fully matured. The central nervous system is maturing, and body temperature is regulated.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Protein</span>
+                  <span class="nutrient-source">75-100 g</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Healthy Fats</span>
+                  <span class="nutrient-source">Essential for brain development</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Lean meats</li>
+                <li class="good">Avocado</li>
+                <li class="good">Nuts and seeds</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">High-fat processed meats</li>
+                <li class="bad">Sugary snacks</li>
+                <li class="bad">Excess caffeine</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Braxton Hicks</h4>
+                  <p>Practice contractions may become more frequent - stay hydrated</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-file-medical"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Group B Strep Test</h4>
+                  <p>You'll likely have a Group B Streptococcus test around this time</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-baby"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Baby's Position</h4>
+                  <p>Most babies are in head-down position by now</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 35 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 35: Kidney Development</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby's kidneys are fully developed, and the liver can process some waste products. The baby is gaining about half a pound per week.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Calcium</span>
+                  <span class="nutrient-source">1000 mg</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Vitamin D</span>
+                  <span class="nutrient-source">600 IU</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Dairy products</li>
+                <li class="good">Fortified plant milk</li>
+                <li class="good">Fatty fish</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Raw or undercooked eggs</li>
+                <li class="bad">Unpasteurized dairy</li>
+                <li class="bad">High-mercury fish</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-weight"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Weight Gain</h4>
+                  <p>You may be gaining about 1 pound per week now</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-utensils"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Small Meals</h4>
+                  <p>Eat smaller, more frequent meals to accommodate your growing uterus</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-bed"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Sleep Position</h4>
+                  <p>Sleep on your side to improve circulation to baby</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Week 36 -->
+      <div class="week-section">
+        <div class="week-header">
+          <div class="week-title">
+            <i class="fas fa-baby"></i>
+            <span>Week 36: Final Preparations</span>
+          </div>
+          <div class="week-toggle">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="week-content">
+          <div class="content-grid">
+            <div class="baby-development">
+              <h3 class="section-title"><i class="fas fa-heartbeat"></i> Baby Development</h3>
+              <p>The baby is considered full-term at the end of this week. The sucking muscles are developed, and the baby is ready for life outside the womb.</p>
+            </div>
+            <div class="nutrition-focus">
+              <h3 class="section-title"><i class="fas fa-star"></i> Key Nutrients</h3>
+              <ul class="nutrient-list">
+                <li>
+                  <span class="nutrient-name">Complex Carbohydrates</span>
+                  <span class="nutrient-source">Energy for labor</span>
+                </li>
+                <li>
+                  <span class="nutrient-name">Protein</span>
+                  <span class="nutrient-source">75-100 g</span>
+                </li>
+              </ul>
+            </div>
+            <div class="foods-to-eat">
+              <h3 class="section-title"><i class="fas fa-check-circle"></i> Recommended Foods</h3>
+              <ul class="food-list">
+                <li class="good">Whole grains</li>
+                <li class="good">Lean proteins</li>
+                <li class="good">Fruits and vegetables</li>
+              </ul>
+            </div>
+            <div class="foods-to-avoid">
+              <h3 class="section-title"><i class="fas fa-times-circle"></i> Foods to Limit</h3>
+              <ul class="food-list">
+                <li class="bad">Heavy, fatty foods</li>
+                <li class="bad">Spicy foods that may cause heartburn</li>
+                <li class="bad">Large meals that may cause discomfort</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tips-section">
+            <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Weekly Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Full-Term</h4>
+                  <p>Your baby is now considered full-term! Labor could begin at any time</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-file-medical"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Weekly Appointments</h4>
+                  <p>You'll now have prenatal appointments every week</p>
+                </div>
+              </div>
+              <div class="tip-card">
+                <div class="tip-icon">
+                  <i class="fas fa-baby"></i>
+                </div>
+                <div class="tip-content">
+                  <h4>Final Preparations</h4>
+                  <p>Make sure your hospital bag is packed and ready to go</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Additional weeks for month 9 (37-40) would follow the same pattern -->
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Pregnancy Nutrition Tracker and Reminder. All rights reserved.</p>
+    <p class="tagline">Helping moms stay healthy for their little ones ❤️</p>
+
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    
+    <div class="contact-block">
+      <a href="contact.html">Contact Us</a>
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../js/trimester.js"></script>
+</body>
+</html> 

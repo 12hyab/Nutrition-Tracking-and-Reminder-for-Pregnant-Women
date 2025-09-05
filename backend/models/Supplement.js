@@ -1,5 +1,4 @@
-const mongoose = require("mongoose");
-
+import mongoose from "mongoose";
 const supplementSchema = new mongoose.Schema(
   {
     user: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
@@ -24,4 +23,6 @@ const supplementSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("Supplement", supplementSchema);
+const Supplement = mongoose.models.Supplement || mongoose.model("Supplement", supplementSchema);
+
+export default Supplement; 

@@ -1,0 +1,548 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f9f7f6; 
+      color: #4a4a4a;
+      line-height: 1.6;
+    }
+
+    .site-header {
+      background: #f3edf2;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .site-header .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .site-header .logo img {
+      height: 50px;
+      width: 50px;
+      object-fit: contain;
+      border-radius: 50%;
+      border: 2px solid  #e7bce1;
+      box-shadow: 0 0 8px #a8dadc44;
+      transition: transform 0.3s ease;
+    }
+    
+    .site-header .logo img:hover {
+      transform: scale(1.1);
+    }
+
+    .site-header .logo h1 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #1d3557;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #457b9d;
+      padding: 0.5rem 0.8rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus {
+      background-color: #dd9fd5;
+      color: #1d3557;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: #457b9d;
+    }
+
+    /* Main Content */
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .page-title {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding: 0 1rem;
+    }
+
+    .page-title h1 {
+      font-size: 2.5rem;
+      color: #1d3557;
+      margin-bottom: 1rem;
+    }
+
+    .page-title p {
+      font-size: 1.1rem;
+      color: #457b9d;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Progress Tracker */
+    .progress-container {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .progress-title {
+      color: #1d3557;
+      margin-bottom: 1rem;
+    }
+
+    .progress-bar {
+      height: 25px;
+      background: #f0f0f0;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 0.5rem;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #e7bce1, #da6330);
+      border-radius: 20px;
+      width: 10%;
+      transition: width 0.5s ease;
+    }
+
+    .progress-text {
+      font-weight: 600;
+      color: #457b9d;
+    }
+
+    /* Trimester Navigation */
+    .trimester-nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+    }
+
+    .trimester-btn {
+      padding: 0.8rem 1.8rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+      font-size: 1.1rem;
+      border: 2px solid #e7bce1;
+      background: white;
+      color: #1d3557;
+      cursor: pointer;
+    }
+
+    .trimester-btn.active,
+    .trimester-btn:hover {
+      background: #e7bce1;
+      color: #1d3557;
+      transform: translateY(-3px);
+    }
+
+    /* Month Navigation */
+    .month-nav {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 1.5rem 0;
+      flex-wrap: wrap;
+    }
+
+    .month-btn {
+      padding: 0.6rem 1.2rem;
+      border-radius: 30px;
+      font-weight: 500;
+      border: 1px solid #e7bce1;
+      background: white;
+      color: #1d3557;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .month-btn.active,
+    .month-btn:hover {
+      background: #e7bce1;
+      color: #1d3557;
+    }
+
+    /* Month Section */
+    .month-section {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      margin-bottom: 2rem;
+      overflow: hidden;
+      display: none;
+    }
+
+    .month-section.active {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .month-header {
+      background: #e7bce1;
+      padding: 1.2rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .month-icon {
+      font-size: 1.8rem;
+      color: #1d3557;
+      background: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .month-title-container {
+      flex-grow: 1;
+    }
+
+    .month-title {
+      color: #1d3557;
+      font-size: 1.5rem;
+    }
+
+    .month-subtitle {
+      font-size: 1rem;
+      color: #457b9d;
+      margin-top: 0.3rem;
+    }
+
+    /* Week Sections */
+    .week-container {
+      padding: 1.5rem;
+    }
+
+    .week-section {
+      border: 1px solid #e7bce1;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .week-section:hover {
+      box-shadow: 0 5px 15px rgba(231, 188, 225, 0.3);
+    }
+
+    .week-header {
+      background: #f9f7f6;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .week-title {
+      color: #1d3557;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .week-title i {
+      color: #da6330;
+    }
+
+    .week-toggle {
+      font-size: 1.2rem;
+      color: #457b9d;
+      transition: transform 0.3s ease;
+    }
+
+    .week-content {
+      padding: 1.5rem;
+      background: white;
+      display: none;
+    }
+
+    .week-content.active {
+      display: block;
+      animation: slideDown 0.4s ease;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .baby-development, .nutrition-focus, .foods-to-eat, .foods-to-avoid {
+      padding: 1rem;
+      border-radius: 8px;
+      background: #f9f7f6;
+    }
+
+    .section-title {
+      color: #1d3557;
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid #e7bce1;
+    }
+
+    .section-title i {
+      color: #da6330;
+    }
+
+    .baby-development p {
+      color: #457b9d;
+      line-height: 1.6;
+    }
+
+    .nutrient-list, .food-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .nutrient-list li, .food-list li {
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed #e7bce1;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .food-list li.bad {
+      color: #e63946;
+    }
+
+    .food-list li.good {
+      color: #2a9d8f;
+    }
+
+    .nutrient-name {
+      font-weight: 600;
+      color: #1d3557;
+    }
+
+    .nutrient-source {
+      color: #457b9d;
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+
+    /* Tips Section */
+    .tips-section {
+      background: linear-gradient(to bottom, #e9b8e2 0%, #f3edf2 100%);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-top: 1.5rem;
+    }
+
+    .tips-title {
+      color: #1d3557;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .tip-card {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .tip-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .tip-icon {
+      font-size: 1.3rem;
+      color: #e7bce1;
+      min-width: 40px;
+      height: 40px;
+      background: #f9f7f6;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .tip-content h4 {
+      color: #1d3557;
+      margin-bottom: 0.3rem;
+    }
+
+    .tip-content p {
+      color: #457b9d;
+      font-size: 0.95rem;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #e9b8e2;
+      color: #f1faee;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    .site-footer .footer-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .site-footer a {
+      color: #da6330;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .site-footer a:hover,
+    .site-footer a:focus {
+      color: #a8dadc;
+    }
+
+    .site-footer .tagline {
+      margin: 0.5rem 0 1rem 0;
+      font-style: italic;
+      font-weight: 500;
+      color: #e0e0e0;
+    }
+
+    .site-footer .social-icons {
+      display: flex;
+      justify-content: center; 
+      gap: 1rem;
+      margin-top: 0.8rem;
+    }
+
+    .social-icons a {
+      color: #f1faee;
+      font-size: 1.3rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #f08a5d;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { 
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to { 
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 900px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        background: #f1faee;
+        position: absolute;
+        top: 60px;
+        right: 2rem;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+        width: max-content;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+      
+      .month-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+      }
+      
+      .month-title {
+        font-size: 1.3rem;
+      }
+      
+      .trimester-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+      }
+    }

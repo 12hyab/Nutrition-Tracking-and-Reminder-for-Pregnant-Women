@@ -3,7 +3,7 @@ const Supplement = require("../models/Supplement");
 const Reminder = require("../models/Reminder");
 const User = require("../models/User");
 
-// -------------------- Get Supplements --------------------
+//Get Supplements 
 exports.getSupplements = async (req, res) => {
   try {
     const user = await User.findById(req.user.id);
@@ -27,9 +27,7 @@ exports.getSupplements = async (req, res) => {
   }
 };
 
-// -------------------- Add Supplement + Reminder --------------------
-
-// -------------------- Add Supplement + Reminders --------------------
+// Add Supplement + Reminders 
 exports.addSupplement = async (req, res) => {
   const session = await mongoose.startSession();
   session.startTransaction();
@@ -44,7 +42,7 @@ exports.addSupplement = async (req, res) => {
     const timesArray = Array.isArray(time) ? time.flat() : (time ? [time] : []);
     if (!name || timesArray.length === 0) throw new Error("Name and at least one time required");
 
-    // 1️⃣ Create supplement
+    //  Create supplement
     const supplement = new Supplement({
       user: user._id,
       name,
@@ -57,7 +55,7 @@ exports.addSupplement = async (req, res) => {
     });
     await supplement.save({ session });
 
-    // 2️⃣ Create reminders for each time
+    // Create reminders for each time
     const reminders = await Promise.all(timesArray.map(async (timeStr) => {
       const [hour, minute] = timeStr.split(":");
       const datetime = new Date();
@@ -71,7 +69,7 @@ exports.addSupplement = async (req, res) => {
         repeat: repeat.toLowerCase(),
         status: "pending",
         category: "Nutrition",
-        supplement: supplement._id // link reminder to supplement
+        supplement: supplement._id 
       });
 
       await reminder.save({ session });
@@ -93,11 +91,11 @@ exports.addSupplement = async (req, res) => {
 };
 
 
-// -------------------- Mark Intake --------------------
+//  Mark Intake 
 exports.markIntake = async (req, res) => {
   try {
     const { id } = req.params;
-    const { status } = req.body; // "taken" or "missed"
+    const { status } = req.body; 
 
     const supp = await Supplement.findById(id);
     if (!supp) return res.status(404).json({ message: "Supplement not found" });

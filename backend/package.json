@@ -9,6 +9,7 @@
   },
   "keywords": [],
   "author": "Hana",
+  "type": "module",
   "license": "ISC",
   "description": "",
   "dependencies": {
@@ -16,11 +17,16 @@
     "bcryptjs": "^3.0.2",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.6.1",
     "express": "^5.1.0",
+    "json2csv": "^6.0.0-alpha.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.17.1",
-    "multer": "^2.0.2"
+    "multer": "^2.0.2",
+    "node-cron": "^4.2.1",
+    "nodemailer": "^7.0.6",
+    "path-to-regexp": "^8.3.0",
+    "twilio": "^5.8.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrition History</title>
+  <link rel="stylesheet" href="../css/nutrition-history.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div id="sidebar">
+    <h2>Hospital Admin</h2>
+    <ul>
+      <li><a href="adminDashbord.html">Dashboard</a></li>
+      <li><a href="nutrition-history.html">Nutrition History</a></li>
+      <li><a href="manage-users.html">Manage Users</a></li>
+      <li><a href="system-settings.html">System Settings</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="educational-content.html">Educational Content</a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+    <header>
+      <h1>Nutrition History</h1>
+    </header>
+
+    <section class="filters">
+      <label>User:
+        <select id="userSelect"><option value="">All Users</option></select>
+      </label>
+      <label>Trimester:
+        <select id="trimester">
+          <option value="">All</option>
+          <option value="1">First</option>
+          <option value="2">Second</option>
+          <option value="3">Third</option>
+        </select>
+      </label>
+      <label>Start Date: <input type="date" id="startDate"></label>
+      <label>End Date: <input type="date" id="endDate"></label>
+      <button id="applyFilters">Apply Filters</button>
+    </section>
+
+    <table id="nutritionTable">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Email</th>
+          <th>Date</th>
+          <th>Calories</th>
+          <th>Protein (g)</th>
+          <th>Carbs (g)</th>
+          <th>Fats (g)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="export-buttons">
+      <button id="downloadCsv">Download Filtered CSV</button>
+      <button id="downloadPdf">Download Filtered PDF</button>
+      <button id="exportAll">Export All Users</button>
+    </div>
+  </div>
+
+  <script src="../js/nutrition.js"></script>
+</body>
+</html>
